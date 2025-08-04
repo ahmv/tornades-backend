@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fichiers",
+  "info": {
+    "singularName": "fichier",
+    "pluralName": "fichiers",
+    "displayName": "Fichier"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Fic": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": ["images", "files", "videos"],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

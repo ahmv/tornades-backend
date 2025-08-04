@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entraineurs",
+  "info": {
+    "singularName": "entraineur",
+    "pluralName": "entraineurs",
+    "displayName": "Entraineur"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Prenom": {
+      "type": "string"
+    }
+  }
+}

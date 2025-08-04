@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pratiques",
+  "info": {
+    "singularName": "pratique",
+    "pluralName": "pratiques",
+    "displayName": "Pratique",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Debut": {"type": "time"},
+    "Fin": {"type": "time"},
+    "Jour": {"type": "datetime"},
+    "equipes": {"collection": "equipe", "via": "pratiques", "dominant": true},
+    "arena": {"model": "arena"}
+  }
+}
