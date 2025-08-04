@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipes",
+  "info": {
+    "singularName": "equipe",
+    "pluralName": "equipes",
+    "displayName": "Equipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "PageMatchHM": {
+      "type": "string"
+    },
+    "pratiques": {
+      "via": "equipes",
+      "collection": "pratique"
+    }
+  }
+}

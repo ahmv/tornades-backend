@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nouvelles",
+  "info": {
+    "singularName": "nouvelle",
+    "pluralName": "nouvelles",
+    "displayName": "Nouvelle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titre": {"type": "string"},
+    "Description": {"type": "richtext"},
+    "Visuel": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": ["images", "files", "videos"],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
